@@ -103,8 +103,3 @@ Opcional: agrega “Datos del alumno” en el encabezado del .tex (autor, curso,
 ## Notas técnicas
 - El cálculo de L{f}(s) se realiza integrando cada tramo de la función `f(t)` (Piecewise), asumiendo s > 1 para evaluar las integrales impropias; luego se muestra una forma canónica equivalente, deducida a partir de los cortes y el valor en la cola (sin fórmulas fijas ni Heaviside en la entrada).
 - SymPy simplifica automáticamente la transformada de F(t) en forma separada con `apart`.
-
-### Personalizar datos del alumno
-- Edita `export_latex.py` y completa:
-  - `alumno_nombre`, `alumno_legajo`, `alumno_materia`, `alumno_catedra`, `alumno_comision`.
-- Quedarán en el informe como autor del documento.
