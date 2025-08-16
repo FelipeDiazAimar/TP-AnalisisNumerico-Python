@@ -1,0 +1,34 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+	\title{TP1 - Transformadas de Laplace}
+\author{Nombre: Felipe Diaz Aimar \\Legajo: 16841 \\Materia: Análisis Numérico \\Comisión: Comisión K}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Ejercicio 1}
+Sea $F(t) = \left(4 t + 3\right)^{2}$. Su transformada de Laplace es
+\[
+\mathcal{L}[F(t)](s) = \frac{9}{s} + \frac{24}{s^{2}} + \frac{32}{s^{3}}
+\]
+
+\section*{Ejercicio 2}
+Sea $f(t) = \begin{cases} e^{t}, & 0 \le t < 1 \\ 0, & 1 \le t < \tfrac{3}{2} \\ 1, & t > \tfrac{3}{2} \end{cases}$. Su transformada de Laplace es
+\[
+\mathcal{L}[f(t)](s) = \frac{1 - e^{1 - s}}{s - 1} + \frac{e^{- \frac{3 s}{2}}}{s}
+\]
+
+\section*{Compilación alternativa (Overleaf)}
+Si no cuenta con latexmk/MiKTeX/TeX Live en su equipo, puede compilar este informe en línea:
+\begin{enumerate}
+    \item Visite \href{https://www.overleaf.com}{Overleaf}.
+    \item Cree un proyecto en blanco (Blank Project).
+    \item Copie y pegue el contenido de este archivo (laplace\_report.tex) en el editor de Overleaf y presione compilar.
+\end{enumerate}
+\end{document}
